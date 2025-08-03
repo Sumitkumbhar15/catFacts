@@ -1,5 +1,116 @@
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #d8f3dc, #e1bee7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.cat-logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6a0dad;
+}
+
+button {
+    background-color: #7c3aed;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #5b21b6;
+    transform: scale(1.03);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#randomfact {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: #444;
+}
+
+footer a {
+    text-decoration: none;
+    color: #6a0dad;
+    font-weight: 600;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+footer img {
+    width: 18px;
+    height: 18px;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
